@@ -1,7 +1,7 @@
-import { appRouter } from "@/server"; // or correct path to router.ts
+import { appRouter } from "@/server/index"; 
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 
-export { appRouter }; // 👈 you need this for serverClient.ts
+export { appRouter };
 
 const handler = (req: Request) =>
   fetchRequestHandler({
