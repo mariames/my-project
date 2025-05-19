@@ -1,4 +1,4 @@
 
-import { appRouter } from "../../app/api/trpc/[trpc]/route";
+import { appRouter } from '@/server/index';
 
 export const serverClient = appRouter.createCaller({});
